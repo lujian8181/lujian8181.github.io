@@ -77,7 +77,7 @@
 						<li>Links</li>
 						
 						
-						<li>About</li>
+						<li>Über</li>
 						
 					</ul>
 				</div>
@@ -239,58 +239,6 @@
 
 
   
-    <article id="post-test" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/03/26/test/" class="article-date">
-  	<time datetime="2016-03-26T09:25:07.000Z" itemprop="datePublished">2016-03-26</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/26/test/">test</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
     <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -395,85 +343,6 @@
         <p class="article-more-link">
           <a  href="/2016/03/22/beacon/#more">more >></a>
         </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-Deep Link" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/02/27/Deep Link/" class="article-date">
-  	<time datetime="2016-02-27T05:55:19.000Z" itemprop="datePublished">2016-02-27</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="Deep-Link"><a href="#Deep-Link" class="headerlink" title="Deep Link"></a>Deep Link</h2><h3 id="Wikipedia-–-Mobile-deep-linking"><a href="#Wikipedia-–-Mobile-deep-linking" class="headerlink" title="Wikipedia – Mobile deep linking"></a><a href="https://en.wikipedia.org/wiki/Mobile_deep_linking" target="_blank" rel="external">Wikipedia – Mobile deep linking</a></h3><blockquote>
-<p>In the context of mobile apps, <strong>deep linking</strong> consists of using a uniform resource identifier (URI) that links to a specific location wihin a mobile app rather than simply launching the app.     </p>
-<p><strong>Deferred Deep Linking</strong> allows users to deep link to content even if the app isn’t already installed. Depending on the mobile device platform, the URI required to trigger the app may be different.</p>
-</blockquote>
-<h5 id="不同移动平台的使用Deep-Link的方法不同："><a href="#不同移动平台的使用Deep-Link的方法不同：" class="headerlink" title="不同移动平台的使用Deep Link的方法不同："></a>不同移动平台的使用Deep Link的方法不同：</h5><ol>
-<li>Android devices work through intents        </li>
-<li>BlackBerry 10 devices works through BB10’s invocation framework    </li>
-<li>Firefox OS devices works through Web Activities    </li>
-<li>iOS devices works through the openUrl application method    </li>
-<li>Windows Phone 8 devices works through the UriMapper class</li>
-</ol>
-<p>###<a href="https://developers.google.com/app-indexing/introduction" target="_blank" rel="external">Google App Indexing</a></p>
-<blockquote>
-<h5 id="对于-Android-开发者的益处"><a href="#对于-Android-开发者的益处" class="headerlink" title="对于 Android 开发者的益处"></a>对于 Android 开发者的益处</h5><p>推动应用安装量：从 Android 设备进行搜索并且尚未安装您的应用的用户将获得安装应用的机会，从而匹配查询。<br>促进再次吸引用户：App Indexing 让我们的系统能够推广来自已安装应用的搜索结果并提供增强的显示元素（例如应用图标）。此外，使用 App Indexing API 还可实现自动完成 Android 应用查询的功能。这意味着，在 Google 应用中键入查询的移动用户在该查询与应用内容相匹配时，将会看到您的应用出现在自动完成下拉列表中。    </p>
-<h5 id="对于-iOS-开发者的益处"><a href="#对于-iOS-开发者的益处" class="headerlink" title="对于 iOS 开发者的益处"></a>对于 iOS 开发者的益处</h5><p>促进再次吸引用户：集成 App Indexing SDK 让我们的系统能够推广来自已安装应用的搜索结果并提供增强的显示元素（例如应用图标）。   </p>
-</blockquote>
-<p>Android 或 iOS 应用设置 App Indexing 的基本流程如下：     </p>
-<h5 id="1-在您的移动应用中支持-HTTP-深层链接。"><a href="#1-在您的移动应用中支持-HTTP-深层链接。" class="headerlink" title="1.在您的移动应用中支持 HTTP 深层链接。"></a>1.在您的移动应用中支持 HTTP 深层链接。</h5><ul>
-<li>Android：向您的清单文件中添加 Intent 过滤器并将您的应用关联到您的网站。    </li>
-<li>iOS 9：支持通用链接并上传 apple-app-site-association 文件。        </li>
-</ul>
-<h5 id="2-实现-App-Indexing。"><a href="#2-实现-App-Indexing。" class="headerlink" title="2. 实现 App Indexing。"></a>2. 实现 App Indexing。</h5><p>使用 App Indexing API for Android。集成适用于 iOS 9 的 App Indexing SDK。    </p>
-<h5 id="3-检查您的实现。"><a href="#3-检查您的实现。" class="headerlink" title="3. 检查您的实现。"></a>3. 检查您的实现。</h5><p>Android：通过 Google 搜索控制台的 Search Analytics 选项卡或通过提取 Google 为您的链接附加的引用网站信息，查看您的链接在 Google 搜索结果中的表现形式。iOS：iOS 通用链接的引用网站信息将在未来几个月内提供。</p>
-<h4 id="AdWords"><a href="#AdWords" class="headerlink" title="AdWords"></a><a href="https://support.google.com/adwords/answer/6046977?hl=zh-Hans" target="_blank" rel="external">AdWords</a></h4><h3 id="Facebook-Deep-Linking"><a href="#Facebook-Deep-Linking" class="headerlink" title="Facebook Deep Linking"></a><a href="https://developers.facebook.com/docs/app-ads/deep-linking?locale=zh_CN" target="_blank" rel="external">Facebook Deep Linking</a></h3><blockquote>
-<h5 id="How-it-works"><a href="#How-it-works" class="headerlink" title="How it works"></a>How it works</h5><ol>
-<li>Your ad will show personalized content, in our example a vacation to San Francisco.    </li>
-<li>People will download your app.    </li>
-<li>Via a deep link people will come back to their point of inspiration, the vacation to San Francisco    </li>
-</ol>
-<h5 id="Step-by-Step-Guide"><a href="#Step-by-Step-Guide" class="headerlink" title="Step-by-Step Guide"></a>Step-by-Step Guide</h5><ol>
-<li>iOS &amp; Android Setup    </li>
-<li>Facebook SDK    </li>
-<li>Facebook App Settings    </li>
-<li>Deferred Deep Linking`    </li>
-<li>Verify Deep Link Setup    </li>
-<li>Add Deep Link to your Ad    </li>
-</ol>
-</blockquote>
-<h3 id="Twitter-Deep-linking"><a href="#Twitter-Deep-linking" class="headerlink" title="Twitter Deep-linking"></a><a href="https://dev.twitter.com/mopub-demand/marketplace/deep-linking" target="_blank" rel="external">Twitter Deep-linking</a></h3><h3 id="Deeplink-me"><a href="#Deeplink-me" class="headerlink" title="Deeplink.me"></a><a href="https://deeplink.me" target="_blank" rel="external">Deeplink.me</a></h3><h3 id="Mobile-SDK-–-Deep-Links"><a href="#Mobile-SDK-–-Deep-Links" class="headerlink" title="Mobile SDK – Deep Links"></a><a href="http://mobilesdk.kongregate.com/docs/deep_links.html" target="_blank" rel="external">Mobile SDK – Deep Links</a></h3><h3 id="Apsalar-–-Deep-Linking-for-Retargeting-Campaigns"><a href="#Apsalar-–-Deep-Linking-for-Retargeting-Campaigns" class="headerlink" title="Apsalar – Deep Linking for Retargeting Campaigns"></a><a href="http://support.apsalar.com/customer/portal/articles/1434704-deep-linking-for-retargeting-campaigns" target="_blank" rel="external">Apsalar – Deep Linking for Retargeting Campaigns</a></h3><h3 id="Urban-Airship-–-Default-Deep-Link"><a href="#Urban-Airship-–-Default-Deep-Link" class="headerlink" title="Urban Airship – Default Deep Link"></a><a href="http://docs.urbanairship.com/topic-guides/android-deep-linking.html#default-deep-link-strategy" target="_blank" rel="external">Urban Airship – Default Deep Link</a></h3><h3 id="Uber-Deep-linking"><a href="#Uber-Deep-linking" class="headerlink" title="Uber Deep-linking"></a><a href="https://developer.uber.com/docs/deep-linking" target="_blank" rel="external">Uber Deep-linking</a></h3>
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
       
       <div class="clearfix"></div>
     </div>
